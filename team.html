@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team - GraceOverflow</title>
+  <style>
+    body {
+      background: #fbc1e5;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      padding: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .member {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.6rem;
+      box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .member:hover img {
+      transform: scale(1.05);
+    }
+
+    .member h3 {
+      font-size: 1rem;
+      margin: 0.2rem 0;
+    }
+
+    .details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, opacity 0.4s ease;
+      opacity: 0;
+    }
+
+    .member.active .details {
+      max-height: 100px;
+      opacity: 1;
+    }
+
+    .details p {
+      margin: 0.3rem 0;
+      font-size: 0.9rem;
+    }
+
+    .details a {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 6px 14px;
+      border-radius: 8px;
+      color: black;
+      font-size: 0.9rem;
+      display: inline-block;
+      margin-top: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .details a:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 40px 0 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: black;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h2>Our Team</h2>
+
+  <div class="team-grid">
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Anmol.jpeg" alt="Anmol">
+      <h3>Anmol</h3>
+      <div class="details">
+        <p>Vocalist</p>
+        <a href="https://www.instagram.com/__anmol1602__/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Christopher.jpeg" alt="Christopher">
+      <h3>Christopher Gamit</h3>
+      <div class="details">
+        <p>Guitars</p>
+        <a href="https://www.instagram.com/charlie_8611/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Elsa.jpeg" alt="Elsa">
+      <h3>Elsa Thomas</h3>
+      <div class="details">
+        <p>Vocalist</p>
+        <a href="https://www.instagram.com/elsamariamt/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Jeremiah.jpeg" alt="Jeremiah">
+      <h3>Yeremiah Davis</h3>
+      <div class="details">
+        <p>Guitars & Vocalist</p>
+        <a href="https://www.instagram.com/_king_son__/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Sam.jpeg" alt="Sam">
+      <h3>Sam Alwe</h3>
+      <div class="details">
+        <p>Vocalist & Guitars</p>
+        <a href="https://www.instagram.com/samalwe/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Abhishek.jpeg" alt="Abhishek">
+      <h3>Abishek Issac</h3>
+      <div class="details">
+        <p>Keyboards</p>
+        <a href="https://www.instagram.com/abhishek_isaiah96/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Tuhina.jpeg" alt="Tuhina">
+      <h3>Tuhina Shaw</h3>
+      <div class="details">
+        <p>Social Media Manager</p>
+        <a href="https://www.instagram.com/blacksaucepasta__/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Sneha.jpeg" alt="Sneha">
+      <h3>Sneha Molsom</h3>
+      <div class="details">
+        <p>Vocalist</p>
+        <a href="https://www.instagram.com/ahens_yourugly/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="aradhana.jpg" alt="Aradhana">
+      <h3>Aradhana</h3>
+      <div class="details">
+        <p>Vocalist</p>
+        <a href="https://www.instagram.com/bunny_200713/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Roshan.jpeg" alt="Roshan">
+      <h3>Roshan Daniel</h3>
+      <div class="details">
+        <p>Keyboards & MD</p>
+        <a href="https://instagram.com/danonymous996" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <!-- New Member -->
+    <div class="member" onclick="toggleMember(this)">
+      <img src="Izac.png" alt="Reuben">
+      <h3>Izac Munzni</h3>
+      <div class="details">
+        <p>Video Editor</p>
+        <a href="https://www.instagram.com/whatisizacdoing/" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="aboutus.html">About our group</a>
+    <a href="contact.html">Get in Touch</a>
+    <a href="join.html">Join Us</a>
+  </nav>
+
+  <script>
+    function toggleMember(el) {
+      el.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
