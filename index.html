@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GraceOverflow</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - GraceOverflow</title>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      margin: 2rem;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('band-bg.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      background-color: grey;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
+      color: white;
     }
-    a {
-      color: #0073e6;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .about-box {
+      background: rgba(255, 255, 255, 0.9);
+      color: white;
+      padding: 2rem 3rem;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .centered-tagline {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: white;
       text-decoration: none;
       font-weight: bold;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.3);
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to GraceOverflow</h1>
-  <p>Your online worship band community.</p>
+  <div class="overlay"></div>
   <nav>
-    <a href="about.html">About</a> |
-    <a href="aboutus.html">Get in Touch</a> |
-    <a href="team.html">Our Team</a> |
+    
+    <a href="aboutus.html">About our group</a>
+    <a href="contact.html">Get in Touch</a>
+    <a href="team.html">Our Team</a>
     <a href="join.html">Join Us</a>
+
+    
   </nav>
+
+  
 </body>
 </html>
