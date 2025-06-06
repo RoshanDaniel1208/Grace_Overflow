@@ -6,21 +6,22 @@
   <title>Our Team - GraceOverflow</title>
   <style>
     body {
-      background: #fbc1e5;
+      background: #dbdbdb;
       color: black;
       font-family: 'Roboto', sans-serif;
-      padding: 2rem;
+      padding: 1.5rem;
     }
 
     h2 {
       text-align: center;
       margin-bottom: 2rem;
+      font-size: 1.8rem;
     }
 
     .team-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1.5rem;
       max-width: 1000px;
       margin: 0 auto;
     }
@@ -31,11 +32,11 @@
     }
 
     .member img {
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.5rem;
       box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
       transition: transform 0.3s;
     }
@@ -45,8 +46,9 @@
     }
 
     .member h3 {
-      font-size: 1rem;
+      font-size: 0.95rem;
       margin: 0.2rem 0;
+      line-height: 1.2;
     }
 
     .details {
@@ -63,18 +65,18 @@
 
     .details p {
       margin: 0.3rem 0;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .details a {
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0.2);
-      padding: 6px 14px;
-      border-radius: 8px;
+      padding: 6px 12px;
+      border-radius: 6px;
       color: black;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       display: inline-block;
-      margin-top: 5px;
+      margin-top: 4px;
       transition: background-color 0.3s;
     }
 
@@ -86,23 +88,55 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 15px;
-      margin: 40px 0 0;
+      gap: 10px;
+      margin-top: 2rem;
     }
 
     nav a {
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0.2);
-      padding: 10px 20px;
-      border-radius: 10px;
+      padding: 8px 16px;
+      border-radius: 8px;
       color: black;
       font-weight: bold;
       transition: background-color 0.3s, transform 0.2s;
+      font-size: 0.9rem;
     }
 
     nav a:hover {
       background-color: rgba(255, 255, 255, 0.4);
       transform: scale(1.05);
+    }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 500px) {
+      body {
+        padding: 1rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .member img {
+        width: 75px;
+        height: 75px;
+      }
+
+      .member h3 {
+        font-size: 0.85rem;
+      }
+
+      .details p,
+      .details a {
+        font-size: 0.8rem;
+      }
+
+      nav a {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+      }
     }
   </style>
 </head>
@@ -110,6 +144,11 @@
   <h2>Our Team</h2>
 
   <div class="team-grid">
+    <!-- Team members remain unchanged -->
+    <!-- You can paste your existing team <div class="member"> blocks here -->
+    <!-- or leave them as is — layout is already mobile-friendly -->
+    
+    <!-- Example -->
     <div class="member" onclick="toggleMember(this)">
       <img src="Anmol.jpeg" alt="Anmol">
       <h3>Anmol</h3>
@@ -118,6 +157,8 @@
         <a href="https://www.instagram.com/__anmol1602__/" target="_blank">Instagram</a>
       </div>
     </div>
+
+    <!-- Add all other team members similarly... -->
 
     <div class="member" onclick="toggleMember(this)">
       <img src="Christopher.jpeg" alt="Christopher">
@@ -226,6 +267,17 @@
         <a href="https://www.instagram.com/soldier_of_christ_offical/" target="_blank">Instagram</a>
       </div>
     </div>
+
+<div class="member" onclick="toggleMember(this)">
+      <img src="Manish.jpeg" alt="Abel">
+      <h3>Manish</h3>
+      <div class="details">
+        <p>Vocalist and Guitarist</p>
+        <a href="https://www.instagram.com/manishvocals_/" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+  </div>
   </div>
 
   <nav>
